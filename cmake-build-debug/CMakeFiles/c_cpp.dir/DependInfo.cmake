@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/moroz/Desktop/tp/c_cpp/src/driver.c" "/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles/c_cpp.dir/src/driver.c.o"
   "/home/moroz/Desktop/tp/c_cpp/src/main.c" "/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles/c_cpp.dir/src/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.

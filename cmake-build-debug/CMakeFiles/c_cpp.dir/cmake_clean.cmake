@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/c_cpp.dir/src/driver.c.o"
   "CMakeFiles/c_cpp.dir/src/main.c.o"
   "c_cpp"
   "c_cpp.pdb"
