@@ -1,4 +1,4 @@
-# Install script for directory: /home/moroz/Рабочий стол/c_cpp
+# Install script for directory: /home/moroz/Desktop/tp/c_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/moroz/Рабочий стол/c_cpp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

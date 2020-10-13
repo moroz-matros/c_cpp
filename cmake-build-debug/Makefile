@@ -68,10 +68,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/moroz/Рабочий стол/c_cpp"
+CMAKE_SOURCE_DIR = /home/moroz/Desktop/tp/c_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/moroz/Рабочий стол/c_cpp/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/moroz/Desktop/tp/c_cpp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/moroz/Рабочий стол/c_cpp/cmake-build-debug/CMakeFiles" "/home/moroz/Рабочий стол/c_cpp/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/moroz/Рабочий стол/c_cpp/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,32 +143,32 @@ c_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/build
 .PHONY : c_cpp/fast
 
-main.o: main.c.o
+src/main.o: src/main.c.o
 
-.PHONY : main.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/main.c.o
-.PHONY : main.c.o
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-main.i: main.c.i
+src/main.i: src/main.c.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/main.c.i
-.PHONY : main.c.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-main.s: main.c.s
+src/main.s: src/main.c.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/main.c.s
-.PHONY : main.c.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_cpp.dir/build.make CMakeFiles/c_cpp.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... c_cpp"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
