@@ -26,8 +26,7 @@ script:
   - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU
   - cmake --build .
   - ctest -VV
-  - cd ..
-  - valgrind --tool=memcheck --leak-check=full --leak-resolution=med  --track-origins=yes ./cmake-build-debug/c_cpp
+  - valgrind --tool=memcheck --leak-check=full --leak-resolution=med  --track-origins=yes ./test/driver_unittest_tests
 
 deploy:
   # release tagged-commits on GitHub Releases:
