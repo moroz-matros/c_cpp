@@ -20,6 +20,10 @@ gtest/gtest.h
 ../include/c_cpp/driver.h
 /home/moroz/Desktop/tp/c_cpp/include/c_cpp/driver.h
 
+/home/moroz/Desktop/tp/c_cpp/test/main.cpp
+gtest/gtest.h
+/home/moroz/Desktop/tp/c_cpp/test/gtest/gtest.h
+
 googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 googletest-src/googletest/include/gtest/gtest/internal/gtest-death-test-internal.h

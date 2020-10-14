@@ -9,23 +9,11 @@ compiler:
   - gcc
 
 env:
-  # список переменных окружения, влияющих на матрицу сборки:
   - TARGET_CPU=amd64 BUILD_CONFIGURATION=Debug
   - TARGET_CPU=amd64 BUILD_CONFIGURATION=Release
   - TARGET_CPU=x86 BUILD_CONFIGURATION=Debug
   - TARGET_CPU=x86 BUILD_CONFIGURATION=Release
 
-matrix:
-  exclude:
-    # вручную исключим ненужные элементы из матрицы сборки:
-    - os:       osx
-      compiler: gcc
-
-    - os:  osx
-      env: TARGET_CPU=x86 BUILD_CONFIGURATION=Debug
-
-    - os:  osx
-      env: TARGET_CPU=x86 BUILD_CONFIGURATION=Release
 
 install:
   # set environment and set dependencies
@@ -34,9 +22,10 @@ install:
 script:
   # test project
   - cd cmake-build-debug
-  - cmake ..
+  - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU
+  - cmake --build .
   - make
-  - ctest --output-on-failure
+  - ctest -VV
 
 deploy:
   # release tagged-commits on GitHub Releases:
@@ -46,7 +35,7 @@ deploy:
   overwrite:    true
 
   api_key:
-    secure:   <encrypted-github-token>
+    secure:   uYEUDYSFhCtdxuuIW9Lw6erMHROK/P2nUkaicgoNgi+CHwUtiuZrO7LwQSN5bNssQYdfkbDDWdjzgos6Df9qhn/im5lomCRkTIvn2vAiNx3AHEKwVhIajURRYQbYzjPEkZSpCKNqcemIjRqGEM1+8UQaYeK/JK9+bKJ7FvRwYnpHd+1r6AngIe0z7P5C/8hVIDq2wYvBcI8kxWNXkThNSsVOrbH9NGB/TQfQYGjek1y3gE8o/qCFT4d5pE8M2nxpIDj/Rq1/bQN+KVLqkYxucrExf8m0C28aEFKEAyi8YqP4zCpfV/ZTjZ8i4WIKUZ0wkrzg8ZEpafsTslaJgwAUXtvYYPGKrmsOENkQnobIh63j4jSx0K94XCEEnHrTkzrPHGGAAwjdGPjqs8t+K9Na+SMu5GXL+mjrxbXSzShppaEewWW/OhoiRD+/KEbvJazaIjhmjKpSKJZo9f3wC+x7yi/+eU7LdM0hPEBnubHcjNs15tiQkJLN6U6qDxIQF9sFb9L4Yhx6lHdbI3/VkJOMogC6d0KQuB9fD1JcDoba9Xl31hHnO6JyW67g2G5f8xdSS7b5kJVuLPt9lxct+wH/YX4Xm8X5sdzVYUP1ck+rjBxaDBHeVI/FpyS63Q3X31oSkyqsds71nnOyluE5Fv9lG6o5OUts8e+5EP+pTNPKI3s=
 
   on:
     tags:     true

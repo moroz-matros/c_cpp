@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/moroz/Desktop/tp/c_cpp/include/c_cpp/driver.h
+stdlib.h
+-
+stdbool.h
+-
+stdio.h
+-
+
+/home/moroz/Desktop/tp/c_cpp/src/driver.c
+../include/c_cpp/driver.h
+/home/moroz/Desktop/tp/c_cpp/include/c_cpp/driver.h
+math.h
+-
+string.h
+/home/moroz/Desktop/tp/c_cpp/src/string.h
+

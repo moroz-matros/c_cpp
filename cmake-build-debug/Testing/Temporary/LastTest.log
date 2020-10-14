@@ -1,10 +1,10 @@
-Start testing: Oct 14 16:44 MSK
+Start testing: Oct 15 00:48 MSK
 ----------------------------------------------------------
 1/1 Testing: driver_unittest
 1/1 Test: driver_unittest
 Command: "/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test/driver_unittest_tests"
 Directory: /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test
-"driver_unittest" start time: Oct 14 16:44 MSK
+"driver_unittest" start time: Oct 15 00:48 MSK
 Output:
 ----------------------------------------------------------
 [==========] Running 7 tests from 4 test cases.
@@ -44,11 +44,11 @@ No driver is ok
 [==========] 7 tests from 4 test cases ran. (0 ms total)
 [  PASSED  ] 7 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"driver_unittest" end time: Oct 14 16:44 MSK
+"driver_unittest" end time: Oct 15 00:48 MSK
 "driver_unittest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 14 16:44 MSK
+End testing: Oct 15 00:48 MSK
