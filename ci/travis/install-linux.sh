@@ -6,6 +6,8 @@ sudo apt-get update -qq
 sudo apt-get install -qq g++-5
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
 
+sudo apt install valgrind
+
 CMAKE_VERSION=3.1
 CMAKE_VERSION_DIR=v3.1
 
