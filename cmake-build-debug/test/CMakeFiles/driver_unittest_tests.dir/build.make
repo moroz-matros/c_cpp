@@ -73,28 +73,28 @@ test/CMakeFiles/driver_unittest_tests.dir/__/src/driver.c.s: cmake_force
 test/CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.o: test/CMakeFiles/driver_unittest_tests.dir/flags.make
 test/CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.o: ../test/driver_unittest.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.o"
-	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.o -c /home/moroz/Desktop/tp/c_cpp/test/driver_unittest.cpp
+	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.o -c /home/moroz/Desktop/tp/c_cpp/test/driver_unittest.cpp
 
 test/CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.i"
-	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/moroz/Desktop/tp/c_cpp/test/driver_unittest.cpp > CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.i
+	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/moroz/Desktop/tp/c_cpp/test/driver_unittest.cpp > CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.i
 
 test/CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.s"
-	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/moroz/Desktop/tp/c_cpp/test/driver_unittest.cpp -o CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.s
+	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/moroz/Desktop/tp/c_cpp/test/driver_unittest.cpp -o CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.s
 
 test/CMakeFiles/driver_unittest_tests.dir/main.cpp.o: test/CMakeFiles/driver_unittest_tests.dir/flags.make
 test/CMakeFiles/driver_unittest_tests.dir/main.cpp.o: ../test/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/driver_unittest_tests.dir/main.cpp.o"
-	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/driver_unittest_tests.dir/main.cpp.o -c /home/moroz/Desktop/tp/c_cpp/test/main.cpp
+	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/driver_unittest_tests.dir/main.cpp.o -c /home/moroz/Desktop/tp/c_cpp/test/main.cpp
 
 test/CMakeFiles/driver_unittest_tests.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/driver_unittest_tests.dir/main.cpp.i"
-	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/moroz/Desktop/tp/c_cpp/test/main.cpp > CMakeFiles/driver_unittest_tests.dir/main.cpp.i
+	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/moroz/Desktop/tp/c_cpp/test/main.cpp > CMakeFiles/driver_unittest_tests.dir/main.cpp.i
 
 test/CMakeFiles/driver_unittest_tests.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/driver_unittest_tests.dir/main.cpp.s"
-	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/moroz/Desktop/tp/c_cpp/test/main.cpp -o CMakeFiles/driver_unittest_tests.dir/main.cpp.s
+	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/moroz/Desktop/tp/c_cpp/test/main.cpp -o CMakeFiles/driver_unittest_tests.dir/main.cpp.s
 
 # Object files for target driver_unittest_tests
 driver_unittest_tests_OBJECTS = \
@@ -109,8 +109,8 @@ test/driver_unittest_tests: test/CMakeFiles/driver_unittest_tests.dir/__/src/dri
 test/driver_unittest_tests: test/CMakeFiles/driver_unittest_tests.dir/driver_unittest.cpp.o
 test/driver_unittest_tests: test/CMakeFiles/driver_unittest_tests.dir/main.cpp.o
 test/driver_unittest_tests: test/CMakeFiles/driver_unittest_tests.dir/build.make
-test/driver_unittest_tests: googletest-build/googlemock/gtest/libgtest_maind.a
-test/driver_unittest_tests: googletest-build/googlemock/gtest/libgtestd.a
+test/driver_unittest_tests: googletest-build/googlemock/gtest/libgtest_main.a
+test/driver_unittest_tests: googletest-build/googlemock/gtest/libgtest.a
 test/driver_unittest_tests: test/CMakeFiles/driver_unittest_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable driver_unittest_tests"
 	cd /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/driver_unittest_tests.dir/link.txt --verbose=$(VERBOSE)
