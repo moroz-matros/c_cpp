@@ -25,7 +25,7 @@ script:
   - cd build
   - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU
   - cmake --build .
-  - ctest --output-on-failure
+  - ctest -VV
 
 deploy:
   # release tagged-commits on GitHub Releases:
