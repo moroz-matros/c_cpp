@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/c_cpp.dir/src/driver.c.o CMakeFiles/c_cpp.dir/src/main.c.o  -o c_cpp  -lm 

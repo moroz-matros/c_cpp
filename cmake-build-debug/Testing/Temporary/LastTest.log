@@ -1,0 +1,54 @@
+Start testing: Oct 15 00:48 MSK
+----------------------------------------------------------
+1/1 Testing: driver_unittest
+1/1 Test: driver_unittest
+Command: "/home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test/driver_unittest_tests"
+Directory: /home/moroz/Desktop/tp/c_cpp/cmake-build-debug/test
+"driver_unittest" start time: Oct 15 00:48 MSK
+Output:
+----------------------------------------------------------
+[==========] Running 7 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from input
+[ RUN      ] input.ok
+[       OK ] input.ok (0 ms)
+[ RUN      ] input.bad_word
+Incorrect input 
+[       OK ] input.bad_word (0 ms)
+[ RUN      ] input.bad_mixed
+Incorrect input 
+[       OK ] input.bad_mixed (0 ms)
+[ RUN      ] input.bad_float
+Incorrect input 
+[       OK ] input.bad_float (0 ms)
+[----------] 4 tests from input (0 ms total)
+
+[----------] 1 test from file_creation
+[ RUN      ] file_creation.ok
+[       OK ] file_creation.ok (0 ms)
+[----------] 1 test from file_creation (0 ms total)
+
+[----------] 1 test from file_open
+[ RUN      ] file_open.not_existing_file
+Failed to open file for read
+[       OK ] file_open.not_existing_file (0 ms)
+[----------] 1 test from file_open (0 ms total)
+
+[----------] 1 test from empty_file
+[ RUN      ] empty_file.normal_work
+No driver is ok 
+[       OK ] empty_file.normal_work (0 ms)
+[----------] 1 test from empty_file (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 4 test cases ran. (0 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"driver_unittest" end time: Oct 15 00:48 MSK
+"driver_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 15 00:48 MSK
