@@ -61,12 +61,14 @@ int find_drivers(size_t n) {
                     cur_size *= 2;
                     ok_drivers = (struct driver *) realloc(ok_drivers, cur_size * size_driver);
                 }
-                //create an array - may be useful
+                // create an array - may be useful
+                // attention! the array may be bigger than the number of elements!
+                // should be used with found_elems or should be copied to other buffer
                 ok_drivers[found_elems] = d;
                 ++found_elems;
             }
         }
-            //problem with given file
+            // problem with given file
         else if (!feof(f)){
             printf(failed_read_from_file);
             fclose(f);

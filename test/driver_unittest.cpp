@@ -34,7 +34,7 @@ TEST (file_open, not_existing_file){
     try {
         remove(file_name);
     } catch (const std::exception& e) {
-        GTEST_FAIL() << e.what(); //if unable to delete file show fail, we need to delete it
+        GTEST_FAIL() << e.what(); // if unable to delete file show fail, we need to delete it
     }
     size_t n = 100;
     ASSERT_EQ (find_drivers(n), 1);
@@ -45,7 +45,7 @@ TEST(empty_file, normal_work){
         FILE *f = fopen(file_name, "wb");
         fclose(f);
     } catch (const std::exception& e) {
-        GTEST_FAIL() << e.what(); //if unable to delete file show, we need to delete it
+        GTEST_FAIL() << e.what(); // if unable to delete file show, we need to delete it
     }
     size_t n = 100;
     ASSERT_EQ (find_drivers(n), 0);
