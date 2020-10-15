@@ -51,12 +51,19 @@ int find_drivers(size_t n) {
         return 1;
     }
     struct driver d;
-    bool is_any_found = false;
+    size_t cur_size = 1, found_elems = 0, size_driver = sizeof(struct driver);
+    struct driver *ok_drivers = (struct driver *) malloc(cur_size * size_driver);
+
     while (!feof(f)) {
         if (fread(&d, sizeof(struct driver), 1, f) == 1) {
             if ((d.is_writable) && (d.capacity >= n)){
-                printf("Driver #%zu %s %zu is ok \n", d.id, d.type, d.capacity);
-                is_any_found = true;
+                if (cur_size == found_elems){
+                    cur_size *= 2;
+                    ok_drivers = (struct driver *) realloc(ok_drivers, cur_size * size_driver);
+                }
+                //create an array - may be useful
+                ok_drivers[found_elems] = d;
+                ++found_elems;
             }
         }
             //problem with given file
@@ -66,9 +73,16 @@ int find_drivers(size_t n) {
             return(1);
         }
     }
-    if (!is_any_found) {
+
+    if (found_elems == 0) {
         printf(no_ok_driver);
     }
+
+    for (int i = 0; i < found_elems; ++i){
+        printf("Driver #%zu %s %zu is ok \n", d.id, d.type, d.capacity);
+    }
+
+    free(ok_drivers);
     fclose(f);
     return 0;
 }
