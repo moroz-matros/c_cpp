@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moroz/Desktop/tp/c_cpp/include/c_cpp/driver.h
+stdlib.h
+-
+stdbool.h
+-
+stdio.h
+-
+
+/home/moroz/Desktop/tp/c_cpp/src/main.c
+unistd.h
+-
+sys/mman.h
+-
+wait.h
+-
+math.h
+/home/moroz/Desktop/tp/c_cpp/src/math.h
+../include/c_cpp/driver.h
+/home/moroz/Desktop/tp/c_cpp/include/c_cpp/driver.h
+string.h
+/home/moroz/Desktop/tp/c_cpp/src/string.h
+time.h
+/home/moroz/Desktop/tp/c_cpp/src/time.h
+
