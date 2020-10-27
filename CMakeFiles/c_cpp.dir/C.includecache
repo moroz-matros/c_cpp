@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moroz/Desktop/c_cpp/src/main.c
+stdio.h
+/home/moroz/Desktop/c_cpp/src/stdio.h
+myStaticLib.h
+/home/moroz/Desktop/c_cpp/src/myStaticLib.h
+myDynamicLib.h
+/home/moroz/Desktop/c_cpp/src/myDynamicLib.h
+dlfcn.h
+-
+
+lib/myDynamicLib.h
+stdio.h
+lib/stdio.h
+string.h
+lib/string.h
+stdlib.h
+lib/stdlib.h
+math.h
+lib/math.h
+sys/mman.h
+-
+unistd.h
+-
+wait.h
+-
+
+lib/myStaticLib.h
+stdio.h
+lib/stdio.h
+string.h
+lib/string.h
+math.h
+lib/math.h
+stdlib.h
+-
+

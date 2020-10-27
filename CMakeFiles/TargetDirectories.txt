@@ -1,0 +1,5 @@
+/home/moroz/Desktop/c_cpp/CMakeFiles/c_cpp.dir
+/home/moroz/Desktop/c_cpp/CMakeFiles/edit_cache.dir
+/home/moroz/Desktop/c_cpp/CMakeFiles/myStaticLib.dir
+/home/moroz/Desktop/c_cpp/CMakeFiles/rebuild_cache.dir
+/home/moroz/Desktop/c_cpp/CMakeFiles/myDynamicLib.dir
