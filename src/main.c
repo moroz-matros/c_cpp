@@ -6,7 +6,6 @@
 static const char file_open_error[] = "Failed to open file for read\n";
 static const char file_name[] = "../input.txt";
 static const char dynlib_name[] = "libmyDynamicLib.so";
-//chrono
 
 int main()
 {
