@@ -24,10 +24,10 @@ script:
   - mkdir build
   - cd build
   - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU
-  - cmake --build . -std=c++11
+  - cmake --build .
   - cd ..
   - ctest -VV
-  - valgrind --tool=memcheck --leak-check=full --leak-resolution=med  --track-origins=yes test/main_tests.cpp
+  - valgrind --tool=memcheck --leak-check=full --leak-resolution=med  --track-origins=yes test/work_tests_tests
 
 deploy:
   # release tagged-commits on GitHub Releases:
