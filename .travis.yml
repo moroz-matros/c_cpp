@@ -42,4 +42,4 @@ deploy:
   on:
     tags:     true
 
-CFLAGS += -std=c++14
+CFLAGS += -std=c++11
