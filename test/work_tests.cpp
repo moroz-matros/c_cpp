@@ -13,7 +13,7 @@ extern "C" {
 #include "myDynamicLib.h"
 }
 
-const int n = 200;
+const int n = 10;
 
 TEST(static_work, ok) {
     FILE *f  = fopen(file_name100, "rb");
