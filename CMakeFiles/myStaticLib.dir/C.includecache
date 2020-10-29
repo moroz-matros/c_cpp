@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.c
+myStaticLib.h
+/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.h
+
+/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.h
+stdio.h
+/home/moroz/Desktop/l/c_cpp/lib/stdio.h
+string.h
+/home/moroz/Desktop/l/c_cpp/lib/string.h
+math.h
+/home/moroz/Desktop/l/c_cpp/lib/math.h
+stdlib.h
+-
+
