@@ -24,7 +24,7 @@ script:
   - mkdir build
   - cd build
   - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU
-  - cmake --build .
+  - cmake --build . -std=c++11
   - cd ..
   - ctest -VV
   - valgrind --tool=memcheck --leak-check=full --leak-resolution=med  --track-origins=yes test/main_tests.cpp
@@ -42,4 +42,3 @@ deploy:
   on:
     tags:     true
 
-CFLAGS += -std=c++11
