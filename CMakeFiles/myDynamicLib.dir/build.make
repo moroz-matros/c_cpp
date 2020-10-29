@@ -60,15 +60,15 @@ include CMakeFiles/myDynamicLib.dir/flags.make
 CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o: CMakeFiles/myDynamicLib.dir/flags.make
 CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o: lib/myDynamicLib.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o   -c /home/moroz/Desktop/c_cpp/lib/myDynamicLib.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o   -c /home/moroz/Desktop/c_cpp/lib/myDynamicLib.c
 
 CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.i"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/lib/myDynamicLib.c > CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/lib/myDynamicLib.c > CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.i
 
 CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.s"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/lib/myDynamicLib.c -o CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/lib/myDynamicLib.c -o CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.s
 
 # Object files for target myDynamicLib
 myDynamicLib_OBJECTS = \

@@ -1,1 +1,1 @@
-/bin/cc -g  -rdynamic CMakeFiles/c_cpp.dir/src/main.c.o  -o c_cpp  -Wl,-rpath,/home/moroz/Desktop/c_cpp libmyStaticLib.a libmyDynamicLib.so -ldl 
+/usr/bin/cc   -rdynamic CMakeFiles/c_cpp.dir/src/main.c.o  -o c_cpp  -Wl,-rpath,/home/moroz/Desktop/c_cpp libmyStaticLib.a libmyDynamicLib.so -ldl 

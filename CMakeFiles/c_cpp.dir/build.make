@@ -60,15 +60,15 @@ include CMakeFiles/c_cpp.dir/flags.make
 CMakeFiles/c_cpp.dir/src/main.c.o: CMakeFiles/c_cpp.dir/flags.make
 CMakeFiles/c_cpp.dir/src/main.c.o: src/main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_cpp.dir/src/main.c.o"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_cpp.dir/src/main.c.o   -c /home/moroz/Desktop/c_cpp/src/main.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_cpp.dir/src/main.c.o   -c /home/moroz/Desktop/c_cpp/src/main.c
 
 CMakeFiles/c_cpp.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_cpp.dir/src/main.c.i"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/src/main.c > CMakeFiles/c_cpp.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/src/main.c > CMakeFiles/c_cpp.dir/src/main.c.i
 
 CMakeFiles/c_cpp.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_cpp.dir/src/main.c.s"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/src/main.c -o CMakeFiles/c_cpp.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/src/main.c -o CMakeFiles/c_cpp.dir/src/main.c.s
 
 # Object files for target c_cpp
 c_cpp_OBJECTS = \

@@ -1,2 +1,2 @@
-/bin/ar qc libmyStaticLib.a  CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o
-/bin/ranlib libmyStaticLib.a
+/usr/bin/ar qc libmyStaticLib.a  CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o
+/usr/bin/ranlib libmyStaticLib.a

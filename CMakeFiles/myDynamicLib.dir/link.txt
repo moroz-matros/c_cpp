@@ -1,1 +1,1 @@
-/bin/cc -fPIC -g  -shared -Wl,-soname,libmyDynamicLib.so -o libmyDynamicLib.so CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o 
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libmyDynamicLib.so -o libmyDynamicLib.so CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o 

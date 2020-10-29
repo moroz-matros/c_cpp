@@ -60,15 +60,15 @@ include CMakeFiles/myStaticLib.dir/flags.make
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o: CMakeFiles/myStaticLib.dir/flags.make
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o: lib/myStaticLib.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o   -c /home/moroz/Desktop/c_cpp/lib/myStaticLib.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o   -c /home/moroz/Desktop/c_cpp/lib/myStaticLib.c
 
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/lib/myStaticLib.c > CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/lib/myStaticLib.c > CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i
 
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s"
-	/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/lib/myStaticLib.c -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/lib/myStaticLib.c -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s
 
 # Object files for target myStaticLib
 myStaticLib_OBJECTS = \
