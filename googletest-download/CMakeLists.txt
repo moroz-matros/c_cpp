@@ -6,8 +6,8 @@ include(ExternalProject)
 ExternalProject_Add(googletest
   GIT_REPOSITORY    https://github.com/google/googletest.git
   GIT_TAG           release-1.8.1
-  SOURCE_DIR        "/home/moroz/Desktop/l/c_cpp/googletest-src"
-  BINARY_DIR        "/home/moroz/Desktop/l/c_cpp/googletest-build"
+  SOURCE_DIR        "/home/moroz/Desktop/c_cpp/googletest-src"
+  BINARY_DIR        "/home/moroz/Desktop/c_cpp/googletest-build"
   CONFIGURE_COMMAND ""
   BUILD_COMMAND     ""
   INSTALL_COMMAND   ""
