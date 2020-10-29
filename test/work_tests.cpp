@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include <chrono>
 
-static const char file_name100[] = "./input.txt";
+static const char file_name100[] = "input.txt";
 static const char dynlib_name[] = "libmyDynamicLib.so";
 static const char static_lib[] = "Static lib ~ ";
 static const char dynamic_lib[] = "Dynamic lib ~ ";
