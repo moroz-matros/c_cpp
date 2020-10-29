@@ -1,29 +1,44 @@
 #include "myDynamicLib.h"
 
+static const char malloc_error[] = "Failed to allocate memory\n";
+static const char file_read_error[] = "Failed to read from file\n";
+static const char map_error[] = "Failed to map\n";
+static const char fork_error[] = "Fork failed\n";
+static const char unmap_error[] = "Failed to unmap\n";
+static const char wait_error[] = "Wait failed with code %d\n";
+
+
 size_t find_max_word(FILE *f){
 
-    f = fopen("input.txt", "rb");
     const size_t S = pow(2, 10) * 100 * pow(2, 10);
     char *text = (char*)malloc(S * sizeof(char));
-    int n = fread(text, sizeof(char), S, f);
-
-    int *shared_memory = (int*)mmap(NULL, sizeof(size_t), PROT_READ | PROT_WRITE,
-                                    MAP_SHARED | MAP_ANONYMOUS, -1, 0);
-
-    if (!shared_memory) {
-        printf("Failed to map\n");
+    if (!text){
+        fprintf(stderr, malloc_error);
         return 1;
     }
 
-    //max_size
+    size_t n = fread(text, sizeof(char), S, f);
+    if (!n){
+        fprintf(stderr, file_read_error);
+        return 1;
+    }
+
+    int *shared_memory = (int*)mmap(NULL, sizeof(size_t), PROT_READ | PROT_WRITE,
+                                    MAP_SHARED | MAP_ANONYMOUS, -1, 0);
+    if (!shared_memory) {
+        printf(map_error);
+        return 1;
+    }
+
+    //max_size save
     shared_memory[0] = 0;
 
     pid_t pid = fork();
 
     if (pid == -1) {
-        printf("Fork failed\n");
+        printf(fork_error);
         if (munmap(shared_memory, sizeof(size_t))) {
-            printf("Failed to unmap\n");
+            printf(unmap_error);
         }
         return 1;
     }
@@ -58,7 +73,7 @@ size_t find_max_word(FILE *f){
     if (pid != 0){
         pid_t wait_result = wait(NULL);
         if (wait_result != pid) {
-            printf("Wait failed with code %d\n", wait_result);
+            printf(wait_error, wait_result);
         }
     }
 
@@ -66,12 +81,13 @@ size_t find_max_word(FILE *f){
 
     if (pid) {
         if (munmap(shared_memory, sizeof(size_t))) {
-            printf("Failed to unmap\n");
+            printf(unmap_error);
         }
     }
 
     if (pid == 0) exit(0);
 
+    free(text);
 
     return max;
 }

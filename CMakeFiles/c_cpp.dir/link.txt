@@ -1,1 +1,1 @@
-/usr/bin/cc -Wall -Werror -Wpedantic -fPIC -g  -rdynamic CMakeFiles/c_cpp.dir/src/main.c.o  -o c_cpp  -Wl,-rpath,/home/moroz/Desktop/c_cpp libmyStaticLib.a libmyDynamicLib.so -ldl 
+/bin/cc -Wall -Werror -Wpedantic -fPIC -g  -rdynamic CMakeFiles/c_cpp.dir/src/main.c.o  -o c_cpp  -Wl,-rpath,/home/moroz/Desktop/c_cpp libmyStaticLib.a libmyDynamicLib.so -ldl 

@@ -1,12 +1,22 @@
 #include "myStaticLib.h"
 
+static const char malloc_error[] = "Failed to allocate memory\n";
+static const char file_read_error[] = "Failed to read from file\n";
+
 size_t find_max_word(FILE *f){
 
-    f = fopen("input.txt", "rb");
     const size_t S = pow(2, 10) * 100 * pow(2, 10);
-    printf("%ld \n", S);
     char *text = (char*)malloc(S * sizeof(char));
-    int n = fread(text, sizeof(char), S, f);
+    if (!text){
+        fprintf(stderr, malloc_error);
+        return 1;
+    }
+
+    size_t n = fread(text, sizeof(char), S, f);
+    if (!n){
+        fprintf(stderr, file_read_error);
+        return 1;
+    }
 
     size_t i = 0, j = n - 1, leni = 0, lenj= 0, max = 0;
 
