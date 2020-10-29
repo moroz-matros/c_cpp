@@ -11,7 +11,7 @@ add_executable(c_cpp src/main.c)
 SET_TARGET_PROPERTIES(c_cpp PROPERTIES LINKER_LANGUAGE C)
 
 
-#SET(CMAKE_C_FLAGS "-Wall -Werror -Wpedantic -fPIC")
+SET(CMAKE_C_FLAGS "-Wall -Werror -Wpedantic -fPIC")
 
 #####################  static lib #####################
 
