@@ -25,7 +25,6 @@ script:
   - cd build
   - cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU
   - cmake --build .
-  - ctest -VV
   - valgrind --tool=memcheck --leak-check=full --leak-resolution=med  --track-origins=yes test/work_tests_tests
 
 deploy:
