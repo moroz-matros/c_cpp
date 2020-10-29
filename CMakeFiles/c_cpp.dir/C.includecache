@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/moroz/Desktop/c_cpp/src/main.c
+/home/moroz/Desktop/l/c_cpp/src/main.c
 stdio.h
-/home/moroz/Desktop/c_cpp/src/stdio.h
+/home/moroz/Desktop/l/c_cpp/src/stdio.h
 myStaticLib.h
-/home/moroz/Desktop/c_cpp/src/myStaticLib.h
+/home/moroz/Desktop/l/c_cpp/src/myStaticLib.h
 myDynamicLib.h
-/home/moroz/Desktop/c_cpp/src/myDynamicLib.h
+/home/moroz/Desktop/l/c_cpp/src/myDynamicLib.h
 dlfcn.h
 -
 

@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/moroz/Desktop/c_cpp/lib/myStaticLib.c
+/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.c
 myStaticLib.h
-/home/moroz/Desktop/c_cpp/lib/myStaticLib.h
+/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.h
 
-/home/moroz/Desktop/c_cpp/lib/myStaticLib.h
+/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.h
 stdio.h
-/home/moroz/Desktop/c_cpp/lib/stdio.h
+/home/moroz/Desktop/l/c_cpp/lib/stdio.h
 string.h
-/home/moroz/Desktop/c_cpp/lib/string.h
+/home/moroz/Desktop/l/c_cpp/lib/string.h
 math.h
-/home/moroz/Desktop/c_cpp/lib/math.h
+/home/moroz/Desktop/l/c_cpp/lib/math.h
 stdlib.h
 -
 

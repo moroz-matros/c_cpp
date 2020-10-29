@@ -3,7 +3,6 @@
 #include <chrono>
 
 static const char file_name100[] = "../input.txt";
-static const char big_file_name[] = "../input2.txt";
 static const char dynlib_name[] = "libmyDynamicLib.so";
 static const char static_lib[] = "Static lib ~ ";
 static const char dynamic_lib[] = "Dynamic lib ~ ";
@@ -20,9 +19,6 @@ TEST(static_work, ok) {
     FILE *f  = fopen(file_name100, "rb");
     ASSERT_EQ(find_max_word(f), 18);
     fclose(f);
-    f = fopen(big_file_name, "rb");
-    ASSERT_EQ(find_max_word(f), 18);
-    fclose(f);
 }
 
 
@@ -32,9 +28,6 @@ TEST(dynamic_work, ok) {
     size_t (*find_max_word)(FILE* f);
     dyn_lib = dlopen(dynlib_name, RTLD_LAZY);
     *(size_t **) (&find_max_word)  = (size_t*)dlsym(dyn_lib, "find_max_word");
-    ASSERT_EQ((*find_max_word)(f), 18);
-    fclose(f);
-    f = fopen(big_file_name, "rb");
     ASSERT_EQ((*find_max_word)(f), 18);
     dlclose(dyn_lib);
     fclose(f);

@@ -1,0 +1,39 @@
+Start testing: Oct 29 13:32 MSK
+----------------------------------------------------------
+1/1 Testing: work_tests
+1/1 Test: work_tests
+Command: "/home/moroz/Desktop/l/c_cpp/test/work_tests_tests"
+Directory: /home/moroz/Desktop/l/c_cpp/test
+"work_tests" start time: Oct 29 13:32 MSK
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from static_work
+[ RUN      ] static_work.ok
+[       OK ] static_work.ok (481 ms)
+[ RUN      ] static_work.time
+Static lib ~ 191.265ms
+[       OK ] static_work.time (38359 ms)
+[----------] 2 tests from static_work (38840 ms total)
+
+[----------] 2 tests from dynamic_work
+[ RUN      ] dynamic_work.ok
+[       OK ] dynamic_work.ok (197 ms)
+[ RUN      ] dynamic_work.time
+Dynamic lib ~ 211.04ms
+[       OK ] dynamic_work.time (42314 ms)
+[----------] 2 tests from dynamic_work (42512 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test cases ran. (81352 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =  81.37 sec
+----------------------------------------------------------
+Test Passed.
+"work_tests" end time: Oct 29 13:34 MSK
+"work_tests" time elapsed: 00:01:21
+----------------------------------------------------------
+
+End testing: Oct 29 13:34 MSK

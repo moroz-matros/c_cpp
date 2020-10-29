@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/moroz/Desktop/l/c_cpp/googletest-download/CMakeFiles/googletest
+/home/moroz/Desktop/l/c_cpp/googletest-download/CMakeFiles/googletest.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/CMakeFiles/googletest-complete.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+/home/moroz/Desktop/l/c_cpp/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/moroz/Desktop/c_cpp/lib/myStaticLib.c" "/home/moroz/Desktop/c_cpp/CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o"
+  "/home/moroz/Desktop/l/c_cpp/lib/myStaticLib.c" "/home/moroz/Desktop/l/c_cpp/CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

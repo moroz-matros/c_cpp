@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/moroz/Desktop/c_cpp
+CMAKE_SOURCE_DIR = /home/moroz/Desktop/l/c_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/moroz/Desktop/c_cpp
+CMAKE_BINARY_DIR = /home/moroz/Desktop/l/c_cpp
 
 # Include any dependencies generated for this target.
 include CMakeFiles/myStaticLib.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/myStaticLib.dir/flags.make
 
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o: CMakeFiles/myStaticLib.dir/flags.make
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o: lib/myStaticLib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o   -c /home/moroz/Desktop/c_cpp/lib/myStaticLib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moroz/Desktop/l/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o   -c /home/moroz/Desktop/l/c_cpp/lib/myStaticLib.c
 
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/c_cpp/lib/myStaticLib.c > CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moroz/Desktop/l/c_cpp/lib/myStaticLib.c > CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.i
 
 CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/c_cpp/lib/myStaticLib.c -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moroz/Desktop/l/c_cpp/lib/myStaticLib.c -o CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.s
 
 # Object files for target myStaticLib
 myStaticLib_OBJECTS = \
@@ -80,7 +80,7 @@ myStaticLib_EXTERNAL_OBJECTS =
 libmyStaticLib.a: CMakeFiles/myStaticLib.dir/lib/myStaticLib.c.o
 libmyStaticLib.a: CMakeFiles/myStaticLib.dir/build.make
 libmyStaticLib.a: CMakeFiles/myStaticLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/moroz/Desktop/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmyStaticLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/moroz/Desktop/l/c_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmyStaticLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/myStaticLib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myStaticLib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/myStaticLib.dir/clean:
 .PHONY : CMakeFiles/myStaticLib.dir/clean
 
 CMakeFiles/myStaticLib.dir/depend:
-	cd /home/moroz/Desktop/c_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/moroz/Desktop/c_cpp /home/moroz/Desktop/c_cpp /home/moroz/Desktop/c_cpp /home/moroz/Desktop/c_cpp /home/moroz/Desktop/c_cpp/CMakeFiles/myStaticLib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/moroz/Desktop/l/c_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/moroz/Desktop/l/c_cpp /home/moroz/Desktop/l/c_cpp /home/moroz/Desktop/l/c_cpp /home/moroz/Desktop/l/c_cpp /home/moroz/Desktop/l/c_cpp/CMakeFiles/myStaticLib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/myStaticLib.dir/depend
 
