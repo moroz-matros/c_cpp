@@ -8,6 +8,11 @@ set(SOURCE_FILES src/main.c
 
 add_executable(c_cpp src/main.c)
 
+SET_TARGET_PROPERTIES(c_cpp PROPERTIES LINKER_LANGUAGE C)
+
+
+#SET(CMAKE_C_FLAGS "-Wall -Werror -Wpedantic -fPIC")
+
 #####################  static lib #####################
 
 
@@ -55,9 +60,5 @@ file(GLOB sources
         "${PROJECT_SOURCE_DIR}/src/*.c")
 
 
-SET_TARGET_PROPERTIES(c_cpp PROPERTIES LINKER_LANGUAGE C)
-
-
-SET(CMAKE_C_FLAGS "-Wall -Werror -Wpedantic -fPIC")
 
 

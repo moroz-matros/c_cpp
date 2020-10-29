@@ -14,7 +14,7 @@ extern "C" {
 #include "myDynamicLib.h"
 }
 
-const int n = 300;
+const int n = 200;
 
 TEST(static_work, ok) {
     FILE *f  = fopen(file_name100, "rb");

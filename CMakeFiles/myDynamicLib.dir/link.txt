@@ -1,1 +1,1 @@
-/bin/cc -fPIC -Wall -Werror -Wpedantic -fPIC -g  -shared -Wl,-soname,libmyDynamicLib.so -o libmyDynamicLib.so CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o 
+/bin/cc -fPIC -g  -shared -Wl,-soname,libmyDynamicLib.so -o libmyDynamicLib.so CMakeFiles/myDynamicLib.dir/lib/myDynamicLib.c.o 

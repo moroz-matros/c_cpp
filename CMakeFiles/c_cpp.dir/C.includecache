@@ -31,6 +31,8 @@ unistd.h
 -
 wait.h
 -
+stdbool.h
+-
 
 lib/myStaticLib.h
 stdio.h
