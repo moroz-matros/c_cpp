@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(c_cpp CXX C)
 
 set(CMAKE_C_STANDARD 11)
+SET(CMAKE_CXX_FLAGS "-std=c++11")
 
 set(SOURCE_FILES src/main.c
         )
